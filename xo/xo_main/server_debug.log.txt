@@ -1,0 +1,652 @@
+FILE_NAME|LINE|FUNCTION|
+xo_server.c|388|main|Server socket fd = [3]
+xo_server.c|411|main|Epoll Done. Entering while (1).
+xo_server.c|422|main|New Connection established conn_fd == [6]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [1]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [] = [WELCOME TO XO_SERVER\r\n], total_bytes_written = [24], conn_fd = [6] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [] = [aa], total_bytes_read = [6], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ aa ] to server with conn_fd [ 6 ]
+xo_server.c|422|main|New Connection established conn_fd == [7]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [2]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [] = [WELCOME TO XO_SERVER\r\n\r\n], total_bytes_written = [28], conn_fd = [7] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [] = [qq], total_bytes_read = [6], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ qq ] to server with conn_fd [ 7 ]
+xo_server.c|432|main|Received Request from client with conn_fd = [32757040]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [ONLINE_PLAYERS|aa [ONLINE]|qq [ONLINE]\r\n], total_bytes_written = [42], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32757040]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT_REQUEST:1], total_bytes_read = [18], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|143|check_remote_user_status|Method called.
+xo_server.c|145|check_remote_user_status|remote player = [1]
+xo_server.c|152|check_remote_user_status|conn_fd = [6]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT_REQUEST:qq\r\n], total_bytes_written = [19], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32755728]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [ONLINE_PLAYERS|aa [BUSY]|qq [BUSY]\r\n], total_bytes_written = [38], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32755728]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [REQUEST_ACCEPTED], total_bytes_read = [20], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|200|start_game|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [REQUEST_ACCEPTED\r\n], total_bytes_written = [20], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32757040]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32755728]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32757040]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:Hello], total_bytes_read = [14], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:Hello\r\n], total_bytes_written = [14], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32755728]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:Hii], total_bytes_read = [12], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:Hii\r\n], total_bytes_written = [12], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32757040]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:kya hal], total_bytes_read = [16], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:kya hal\r\n], total_bytes_written = [16], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32755728]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:badia], total_bytes_read = [14], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:badia\r\n], total_bytes_written = [14], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32757040]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:fine], total_bytes_read = [13], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:fine\r\n], total_bytes_written = [13], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32755728]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:how r u ??], total_bytes_read = [19], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:how r u ??\r\n], total_bytes_written = [19], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [32755728]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CLOSE], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [2].
+xo_server.c|86|delete_xo_player_data|row_num = [0]
+xo_server.c|49|close_connection|Method called.
+xo_server.c|432|main|Received Request from client with conn_fd = [32757040]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CLOSE], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [1].
+xo_server.c|49|close_connection|Method called.
+FILE_NAME|LINE|FUNCTION|
+xo_server.c|388|main|Server socket fd = [3]
+xo_server.c|411|main|Epoll Done. Entering while (1).
+xo_server.c|422|main|New Connection established conn_fd == [6]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [1]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [] = [WELCOME TO XO_SERVER\r\n], total_bytes_written = [24], conn_fd = [6] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [] = [aa], total_bytes_read = [6], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ aa ] to server with conn_fd [ 6 ]
+xo_server.c|432|main|Received Request from client with conn_fd = [26845200]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [ONLINE_PLAYERS|aa [ONLINE]\r\n], total_bytes_written = [30], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26845200]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT_REQUEST:1], total_bytes_read = [18], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|143|check_remote_user_status|Method called.
+xo_server.c|145|check_remote_user_status|remote player = [1]
+xo_server.c|152|check_remote_user_status|conn_fd = [6]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT_REQUEST:aa\r\n], total_bytes_written = [19], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26845200]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [REQUEST_ACCEPTED], total_bytes_read = [20], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|200|start_game|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [REQUEST_ACCEPTED\r\n], total_bytes_written = [20], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26845200]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26845200]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:hii], total_bytes_read = [12], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:hii\r\n], total_bytes_written = [12], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26845200]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:hello], total_bytes_read = [14], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:hello\r\n], total_bytes_written = [14], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26845200]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CLOSE], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [1].
+xo_server.c|49|close_connection|Method called.
+xo_server.c|422|main|New Connection established conn_fd == [6]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [1]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [WELCOME TO XO_SERVER\r\n\r\n], total_bytes_written = [28], conn_fd = [6] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [aa], total_bytes_read = [6], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ aa ] to server with conn_fd [ 6 ]
+xo_server.c|422|main|New Connection established conn_fd == [7]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [2]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [] = [WELCOME TO XO_SERVER\r\n\r\n\r\n], total_bytes_written = [32], conn_fd = [7] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [] = [qq], total_bytes_read = [6], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ qq ] to server with conn_fd [ 7 ]
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [ONLINE_PLAYERS|aa [ONLINE]|qq [ONLINE]\r\n], total_bytes_written = [42], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT_REQUEST:1], total_bytes_read = [18], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|143|check_remote_user_status|Method called.
+xo_server.c|145|check_remote_user_status|remote player = [1]
+xo_server.c|152|check_remote_user_status|conn_fd = [6]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT_REQUEST:qq\r\n], total_bytes_written = [19], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26846512]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [ONLINE_PLAYERS|aa [BUSY]|qq [BUSY]\r\n], total_bytes_written = [38], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26846512]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [REQUEST_ACCEPTED], total_bytes_read = [20], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|200|start_game|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [REQUEST_ACCEPTED\r\n], total_bytes_written = [20], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26846512]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:Hiii], total_bytes_read = [13], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:Hiii\r\n], total_bytes_written = [13], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26846512]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:hello], total_bytes_read = [14], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:hello\r\n], total_bytes_written = [14], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:how r u ??], total_bytes_read = [19], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:how r u ??\r\n], total_bytes_written = [19], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26846512]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:i am fine ], total_bytes_read = [19], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:i am fine \r\n], total_bytes_written = [19], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:ya sur], total_bytes_read = [15], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:ya sur\r\n], total_bytes_written = [15], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26846512]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:bye], total_bytes_read = [12], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:bye\r\n], total_bytes_written = [12], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:bye], total_bytes_read = [12], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:bye\r\n], total_bytes_written = [12], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26846512]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CLOSE], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [2].
+xo_server.c|86|delete_xo_player_data|row_num = [0]
+xo_server.c|49|close_connection|Method called.
+xo_server.c|432|main|Received Request from client with conn_fd = [26847568]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CLOSE], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [1].
+xo_server.c|49|close_connection|Method called.
+xo_server.c|422|main|New Connection established conn_fd == [6]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [1]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [WELCOME TO XO_SERVER\r\n\r\n\r\n\r\n], total_bytes_written = [36], conn_fd = [6] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [aa], total_bytes_read = [6], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ aa ] to server with conn_fd [ 6 ]
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [ONLINE_PLAYERS|aa [ONLINE]\r\n], total_bytes_written = [30], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT_REQUEST:1], total_bytes_read = [18], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|143|check_remote_user_status|Method called.
+xo_server.c|145|check_remote_user_status|remote player = [1]
+xo_server.c|152|check_remote_user_status|conn_fd = [6]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT_REQUEST:aa\r\n], total_bytes_written = [19], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [REQUEST_ACCEPTED], total_bytes_read = [20], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|200|start_game|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [REQUEST_ACCEPTED\r\n], total_bytes_written = [20], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:gg], total_bytes_read = [11], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:gg\r\n], total_bytes_written = [11], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:gg], total_bytes_read = [11], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:gg\r\n], total_bytes_written = [11], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:gg], total_bytes_read = [11], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:gg\r\n], total_bytes_written = [11], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [26848960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CLOSE], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [1].
+xo_server.c|49|close_connection|Method called.
+FILE_NAME|LINE|FUNCTION|
+xo_server.c|388|main|Server socket fd = [3]
+xo_server.c|411|main|Epoll Done. Entering while (1).
+xo_server.c|422|main|New Connection established conn_fd == [6]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [1]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [] = [WELCOME TO XO_SERVER\r\n], total_bytes_written = [24], conn_fd = [6] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [] = [aa], total_bytes_read = [6], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ aa ] to server with conn_fd [ 6 ]
+xo_server.c|422|main|New Connection established conn_fd == [7]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [2]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [] = [WELCOME TO XO_SERVER\r\n\r\n], total_bytes_written = [28], conn_fd = [7] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [] = [qq], total_bytes_read = [6], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ qq ] to server with conn_fd [ 7 ]
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [ONLINE_PLAYERS|aa [ONLINE]|qq [ONLINE]\r\n], total_bytes_written = [42], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT_REQUEST:1], total_bytes_read = [18], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|143|check_remote_user_status|Method called.
+xo_server.c|145|check_remote_user_status|remote player = [1]
+xo_server.c|152|check_remote_user_status|conn_fd = [6]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT_REQUEST:qq\r\n], total_bytes_written = [19], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [ONLINE_PLAYERS|aa [BUSY]|qq [BUSY]\r\n], total_bytes_written = [38], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [REQUEST_ACCEPTED], total_bytes_read = [20], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|200|start_game|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [REQUEST_ACCEPTED\r\n], total_bytes_written = [20], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:hello ], total_bytes_read = [15], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:hello \r\n], total_bytes_written = [15], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:hii], total_bytes_read = [12], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:hii\r\n], total_bytes_written = [12], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:how r u ?], total_bytes_read = [18], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:how r u ?\r\n], total_bytes_written = [18], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:i am file], total_bytes_read = [18], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:i am file\r\n], total_bytes_written = [18], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:ok], total_bytes_read = [11], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:ok\r\n], total_bytes_written = [11], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:where r u], total_bytes_read = [18], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:where r u\r\n], total_bytes_written = [18], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:here], total_bytes_read = [13], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:here\r\n], total_bytes_written = [13], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:how r u], total_bytes_read = [16], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:how r u\r\n], total_bytes_written = [16], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11845648]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CLOSE], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [2].
+xo_server.c|86|delete_xo_player_data|row_num = [0]
+xo_server.c|49|close_connection|Method called.
+xo_server.c|432|main|Received Request from client with conn_fd = [11846960]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CLOSE], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [1].
+xo_server.c|49|close_connection|Method called.
+xo_server.c|422|main|New Connection established conn_fd == [6]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [1]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [WELCOME TO XO_SERVER\r\n\r\n\r\n], total_bytes_written = [32], conn_fd = [6] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [aa], total_bytes_read = [6], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ aa ] to server with conn_fd [ 6 ]
+xo_server.c|422|main|New Connection established conn_fd == [7]
+xo_server.c|125|start_xo_client_session|Method called.
+xo_server.c|34|create_xo_player_table_entry|Method called.
+xo_server.c|36|create_xo_player_table_entry|Num of Players = [2]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [WELCOME TO XO_SERVER\r\n\r\n\r\n\r\n], total_bytes_written = [36], conn_fd = [7] 
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [qq], total_bytes_read = [6], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|61|input_xo_player_data|Method called.
+xo_server.c|66|input_xo_player_data|Adding [ qq ] to server with conn_fd [ 7 ]
+xo_server.c|432|main|Received Request from client with conn_fd = [11849408]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [ONLINE_PLAYERS|aa [ONLINE]|qq [ONLINE]\r\n], total_bytes_written = [42], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11849408]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT_REQUEST:1], total_bytes_read = [18], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|143|check_remote_user_status|Method called.
+xo_server.c|145|check_remote_user_status|remote player = [1]
+xo_server.c|152|check_remote_user_status|conn_fd = [6]
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT_REQUEST:qq\r\n], total_bytes_written = [19], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11848352]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [ONLINE_USERS], total_bytes_read = [16], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|106|get_players_list|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [ONLINE_PLAYERS|aa [BUSY]|qq [BUSY]\r\n], total_bytes_written = [38], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11848352]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [REQUEST_ACCEPTED], total_bytes_read = [20], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|200|start_game|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [REQUEST_ACCEPTED\r\n], total_bytes_written = [20], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11849408]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11848352]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:\r\n], total_bytes_written = [9], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11849408]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:hii], total_bytes_read = [12], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:hii\r\n], total_bytes_written = [12], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11848352]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:hello], total_bytes_read = [14], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:hello\r\n], total_bytes_written = [14], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11849408]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:h r u], total_bytes_read = [14], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:h r u\r\n], total_bytes_written = [14], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11848352]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:i am fine], total_bytes_read = [18], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:i am fine\r\n], total_bytes_written = [18], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11849408]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CHAT:ok], total_bytes_read = [11], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [aa] = [CHAT:ok\r\n], total_bytes_written = [11], conn_fd = [6] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11848352]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CHAT:fine], total_bytes_read = [13], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|228|proc_user_chat|Method called.
+xo_server.c|326|write_to_client|Method called.
+xo_server.c|338|write_to_client|Buff written to [qq] = [CHAT:fine\r\n], total_bytes_written = [13], conn_fd = [7] 
+xo_server.c|432|main|Received Request from client with conn_fd = [11849408]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [qq] = [CLOSE], total_bytes_read = [9], conn_fd = [7] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [2].
+xo_server.c|49|close_connection|Method called.
+xo_server.c|432|main|Received Request from client with conn_fd = [11848352]
+xo_server.c|291|read_from_client|Method called.
+xo_server.c|308|read_from_client|Buff read from [aa] = [CLOSE], total_bytes_read = [9], conn_fd = [6] 
+xo_server.c|255|proc_client_req|Method called.
+xo_server.c|78|delete_xo_player_data|Method called.
+xo_server.c|79|delete_xo_player_data|Number of Player = [1].
+xo_server.c|49|close_connection|Method called.

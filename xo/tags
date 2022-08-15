@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BOLDGREEN	server.c	12;"	d	file:
+BOLDGREEN	xo3.c	7;"	d	file:
+BOLDMAGENTA	server.c	13;"	d	file:
+BOLDMAGENTA	xo3.c	8;"	d	file:
+BOLDRED	server.c	14;"	d	file:
+BOLDRED	xo3.c	9;"	d	file:
+RESET	server.c	11;"	d	file:
+RESET	xo3.c	6;"	d	file:
+board	server.c	/^char board[3][3] =$/;"	v
+client	xo3.c	/^struct sockaddr_in client;$/;"	v	typeref:struct:sockaddr_in
+create_tcp_connection	xo3.c	/^int create_tcp_connection()$/;"	f
+didwin	xo3.c	/^int didwin(char board[4][4]) {$/;"	f
+didwin	xo4.c	/^int didwin(char board[4][4]) {$/;"	f
+four_X_four	server.c	/^ char four_X_four[4][4];$/;"	v
+main	client.c	/^int main( int argc, char * argv[])$/;"	f
+main	server.c	/^int main(int argc, char *argv[])$/;"	f
+main	test.c	/^int main(void)$/;"	f
+main	xo.c	/^  int main() {$/;"	f
+main	xo3.c	/^int main(int argc, char *argv[])$/;"	f
+main	xo4.c	/^int main(void){$/;"	f
+play_xo3	server.c	/^int play_xo3(int value, int player)$/;"	f
+play_xo3	xo3.c	/^int play_xo3(void)$/;"	f
+play_xo4	server.c	/^int play_xo4(int value, int player)$/;"	f
+play_xo4	xo3.c	/^int play_xo4()$/;"	f
+print_grid	xo4.c	/^void print_grid(char board[4][4]) {$/;"	f
+print_grid_3	server.c	/^int print_grid_3(char board[3][3])$/;"	f
+print_grid_3	xo3.c	/^int print_grid_3(char board[3][3])$/;"	f
+print_grid_4	server.c	/^int print_grid_4(char board[4][4]) {$/;"	f
+print_grid_4	xo3.c	/^void print_grid_4(char board[4][4]) {$/;"	f
+read_from_server	xo3.c	/^int read_from_server()$/;"	f
+sock_fd	xo3.c	/^int sock_fd;$/;"	v
+write_to_server	xo3.c	/^int write_to_server(int value)$/;"	f

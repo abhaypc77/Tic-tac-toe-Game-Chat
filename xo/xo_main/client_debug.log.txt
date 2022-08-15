@@ -1,0 +1,128 @@
+FILE_NAME|LINE|FUNCTION|
+xo_client.c|489|xo_client_init|Method called.
+xo_client.c|31|create_tcp_connection|Method called.xo_client.c|55|create_tcp_connection|Non blocking socket set
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [WELCOME TO XO_SERVER]
+xo_client.c|414|proc_server_resp|Method called.
+xo_client.c|118|start_session_with_server|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [aa\r\n]
+
+xo_chat.c|138|display_chat_options|Method called.
+xo_chat.c|122|get_online_users|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [ONLINE_USERS\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [ONLINE_PLAYERS|aa [ONLINE]]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|88|parse_list_of_users|Method called.
+xo_chat.c|16|create_user_connection|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT_REQUEST:1\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT_REQUEST:aa]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|65|proc_chat_request|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [REQUEST_ACCEPTED\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [REQUEST_ACCEPTED]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT:\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT:hii\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:hii]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT:hello\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:hello]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|102|xo_signal_handler|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CLOSE\r\n]
+
+FILE_NAME|LINE|FUNCTION|
+xo_client.c|489|xo_client_init|Method called.
+xo_client.c|31|create_tcp_connection|Method called.xo_client.c|55|create_tcp_connection|Non blocking socket set
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [WELCOME TO XO_SERVER]
+xo_client.c|414|proc_server_resp|Method called.
+xo_client.c|118|start_session_with_server|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [aa\r\n]
+
+xo_chat.c|138|display_chat_options|Method called.
+xo_chat.c|122|get_online_users|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [ONLINE_USERS\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT_REQUEST:qq]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|65|proc_chat_request|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [REQUEST_ACCEPTED\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [ONLINE_PLAYERS|aa [BUSY]|qq [BUSY]]
+xo_client.c|414|proc_server_resp|Method called.
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT:\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:Hiii]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT:hello\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:how r u ??]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT:i am fine \r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:ya sur]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CHAT:bye\r\n]
+
+xo_client.c|159|read_from_server|Method called.
+xo_client.c|176|read_from_server|Buff read from server = [CHAT:bye]
+xo_client.c|414|proc_server_resp|Method called.
+xo_chat.c|48|proc_user_chat|Method called.
+xo_chat.c|32|handle_chat|Method called.
+xo_client.c|102|xo_signal_handler|Method called.
+xo_client.c|133|write_to_server|Method called.
+xo_client.c|145|write_to_server|Buff written to server = [CLOSE\r\n]
+

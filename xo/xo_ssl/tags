@@ -1,0 +1,114 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BOLDGREEN	game_xo_3.c	10;"	d	file:
+BOLDGREEN	game_xo_4.c	8;"	d	file:
+BOLDMAGENTA	game_xo_3.c	11;"	d	file:
+BOLDMAGENTA	game_xo_4.c	9;"	d	file:
+BOLDRED	game_xo_3.c	12;"	d	file:
+BOLDRED	game_xo_4.c	10;"	d	file:
+BUSY	xo_server.h	6;"	d
+CLIENT_DEBUG_FILE	xo_debug.c	12;"	d	file:
+DRAW	xo_client.h	14;"	d
+LOST	xo_client.h	13;"	d
+MAX_DEBUG_SIZE	xo_debug.c	10;"	d	file:
+OFFLINE	xo_server.h	4;"	d
+ONLINE	xo_client.h	7;"	d
+ONLINE	xo_server.h	5;"	d
+PLAYING	xo_client.h	6;"	d
+READ	xo_client.h	4;"	d
+RESET	game_xo_3.c	9;"	d	file:
+RESET	game_xo_4.c	7;"	d	file:
+SERVER_ADDRESS	xo_client.h	1;"	d
+SERVER_DEBUG_FILE	xo_debug.c	11;"	d	file:
+SERVER_PORT	xo_client.h	2;"	d
+SERVER_PORT	xo_server.h	1;"	d
+SUCCESS	xo_client.h	3;"	d
+SUCCESS	xo_server.h	2;"	d
+Server_Greeting	xo_server.c	/^static char Server_Greeting[] = "WELCOME TO XO_SERVER"; $/;"	v	file:
+WON	xo_client.h	12;"	d
+WRITE	xo_client.h	5;"	d
+XODL_CLI	xo_debug.h	2;"	d
+XODL_SER	xo_debug.h	1;"	d
+XO_3X3	xo_client.h	9;"	d
+XO_4X4	xo_client.h	10;"	d
+XO_Client	xo_client.h	/^typedef struct XO_Client{$/;"	s
+XO_Client	xo_client.h	/^} XO_Client;  $/;"	t	typeref:struct:XO_Client
+XO_Player	xo_server.h	/^typedef struct XO_Player {$/;"	s
+XO_Player	xo_server.h	/^} XO_Player;$/;"	t	typeref:struct:XO_Player
+board_3	game_xo_3.c	/^char board_3[3][3] = $/;"	v
+board_4	game_xo_4.c	/^char board_4[4][4];$/;"	v
+check_remote_player_status	xo_server.c	/^int check_remote_player_status(connection *cptr)$/;"	f
+check_winner_3	game_xo_3.c	/^check_winner_3()$/;"	f
+check_winner_4	game_xo_4.c	/^int check_winner_4() {$/;"	f
+conn_fd	xo_client.h	/^  int conn_fd;$/;"	m	struct:XO_Client
+conn_fd	xo_server.h	/^  int conn_fd;$/;"	m	struct:connection
+connection	xo_server.h	/^typedef struct connection {$/;"	s
+connection	xo_server.h	/^} connection;$/;"	t	typeref:struct:connection
+cptr	xo_server.h	/^  connection *cptr;$/;"	m	struct:XO_Player
+create_player_connection	xo_client.c	/^int create_player_connection(int player)$/;"	f
+create_tcp_connection	xo_client.c	/^int create_tcp_connection()$/;"	f
+create_xo_player_table_entry	xo_server.c	/^int create_xo_player_table_entry(int num_player)$/;"	f
+debug_fd	xo_debug.c	/^static int debug_fd = -1;$/;"	v	file:
+debug_flag	xo_client.c	/^int debug_flag;$/;"	v
+debug_flag	xo_server.c	/^int debug_flag = 0;$/;"	v
+debug_header	xo_debug.c	/^static char debug_header[] = "FILE_NAME|LINE|FUNCTION|\\n";$/;"	v	file:
+display_game_options	xo_client.c	/^int display_game_options()$/;"	f
+game_type	xo_client.c	/^int game_type()$/;"	f
+game_type	xo_client.h	/^  int game_type;$/;"	m	struct:XO_Client
+game_type	xo_server.h	/^  int game_type;$/;"	m	struct:XO_Player
+get_online_players	xo_client.c	/^int get_online_players()$/;"	f
+get_players_list	xo_server.c	/^int get_players_list(connection *cptr)$/;"	f
+handle_move	xo_client.c	/^int handle_move()$/;"	f
+idx	xo_server.h	/^  int idx;$/;"	m	struct:connection
+init_grid_3	game_xo_3.c	/^int init_grid_3()$/;"	f
+init_grid_4	game_xo_4.c	/^void init_grid_4()$/;"	f
+init_xo_server	xo_server.c	/^int init_xo_server()$/;"	f
+input_xo_player_data	xo_server.c	/^int input_xo_player_data(connection *cptr)$/;"	f
+main	xo_client.c	/^int main(int argc, char *argv[])$/;"	f
+main	xo_server.c	/^int main(int argc, char *argv[])$/;"	f
+move	xo_client.h	/^  int move;$/;"	m	struct:XO_Client
+name	xo_client.h	/^  char name[100];$/;"	m	struct:XO_Client
+name	xo_server.h	/^  char name[50];$/;"	m	struct:XO_Player
+num_player	xo_server.c	/^int num_player = 0;$/;"	v
+open_debug_file	xo_debug.c	/^void open_debug_file(char entity)$/;"	f
+parse_arguments	xo_client.c	/^int parse_arguments(int argc, char *argv[])$/;"	f
+parse_arguments	xo_server.c	/^int parse_arguments(int argc, char *argv[])$/;"	f
+parse_list_of_players	xo_client.c	/^int parse_list_of_players()$/;"	f
+peer	xo_server.h	/^  struct XO_Player *peer;  $/;"	m	struct:XO_Player	typeref:struct:XO_Player::XO_Player
+player	xo_client.h	/^  int player;$/;"	m	struct:XO_Client
+print_grid_3	game_xo_3.c	/^int print_grid_3()$/;"	f
+print_grid_4	game_xo_4.c	/^void print_grid_4() {$/;"	f
+proc_client_req	xo_server.c	/^int proc_client_req(connection *cptr)$/;"	f
+proc_game_request	xo_client.c	/^int proc_game_request()$/;"	f
+proc_grid_3	game_xo_3.c	/^int proc_grid_3()$/;"	f
+proc_grid_4	game_xo_4.c	/^int proc_grid_4()$/;"	f
+proc_player_move	xo_client.c	/^int proc_player_move()$/;"	f
+proc_players_move	xo_server.c	/^int proc_players_move(connection *cptr)$/;"	f
+proc_server_resp	xo_client.c	/^int proc_server_resp()$/;"	f
+read_buff	xo_client.h	/^  char read_buff[1024]; $/;"	m	struct:XO_Client
+read_buff	xo_server.h	/^  char read_buff[1024];$/;"	m	struct:connection
+read_from_client	xo_server.c	/^int read_from_client(connection *cptr)$/;"	f
+read_from_server	xo_client.c	/^int read_from_server(int conn_fd)$/;"	f
+reset_game	xo_client.c	/^int reset_game()$/;"	f
+result	xo_client.h	/^  int result;$/;"	m	struct:XO_Client
+set_game_type	xo_server.c	/^int set_game_type(connection *cptr)$/;"	f
+start_game	xo_client.c	/^int start_game(int player)$/;"	f
+start_game	xo_server.c	/^int start_game(connection *cptr)$/;"	f
+start_session_with_server	xo_client.c	/^int start_session_with_server()$/;"	f
+start_xo_client_session	xo_server.c	/^int start_xo_client_session(connection *cptr)$/;"	f
+state	xo_client.h	/^  int state;$/;"	m	struct:XO_Client
+status	xo_client.h	/^  int status;$/;"	m	struct:XO_Client
+status	xo_server.h	/^  int status;$/;"	m	struct:XO_Player
+total_bytes_read	xo_server.h	/^  int total_bytes_read;$/;"	m	struct:connection
+total_chance	game_xo_3.c	/^static int total_chance;$/;"	v	file:
+write_to_client	xo_server.c	/^int write_to_client(connection *cptr, char *buff)$/;"	f
+write_to_server	xo_client.c	/^int write_to_server(int conn_fd, char *buff, int size)$/;"	f
+xo_client	xo_client.c	/^XO_Client xo_client;$/;"	v
+xo_client_init	xo_client.c	/^int xo_client_init()$/;"	f
+xo_debug_log	xo_debug.c	/^void xo_debug_log(char entity, char *file, int line, char *fun_name, char *format, ...)$/;"	f
+xo_player	xo_server.c	/^XO_Player *xo_player = NULL;$/;"	v
+xo_signal_handler	xo_client.c	/^void xo_signal_handler(int signum)$/;"	f

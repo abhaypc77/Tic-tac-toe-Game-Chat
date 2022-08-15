@@ -1,0 +1,128 @@
+#include <stdio.h>
+#include <openssl/ssl.h>
+#include <openssl/err.h>
+#include <openssl/rsa.h>
+#include <openssl/x509.h>
+#include <openssl/bio.h>
+#include <openssl/evp.h>
+#include "xo_client.h"
+
+  SSL_CTX *ctx;
+  SSL *ssl;
+  int ssl_errno;
+
+
+int xo_init_ssl()
+{
+  SSL_library_init() ;
+  SSL_load_error_strings();
+  ERR_load_BIO_strings();
+  OpenSSL_add_all_algorithms();
+
+  ctx = SSL_CTX_new( SSLv23_server_method());
+
+  if (ctx == NULL) {
+    ERR_error_string(ERR_get_error(), error);
+    printf("[%s] \n",error);
+    exit(1);
+  }
+  else {
+     printf("success \n ");
+  }
+
+  if (!(SSL_CTX_use_certificate_chain_file(ctx, "server.pem"))) //set certificate file
+   {
+     printf("Couldn't read certificate file\n");
+     exit(1);
+   }
+
+  if (!(SSL_CTX_use_PrivateKey_file(ctx , "server.pem", SSL_FILETYPE_PEM))) //set private key file 
+   {
+     printf("Couldn't read key file");
+     exit(1);
+   }
+
+   SSL_CTX_set_cipher_list(ctx, "AES128-SHA:DES-CBC3-SHA");
+
+   my_ssl = SSL_new(ctx);
+
+   if (my_ssl == NULL)
+   {
+      ERR_error_string(ERR_get_error(), error);
+      printf("[%s] \n",error);
+      exit(1);
+   }
+
+return SUCCESS;
+}
+
+void handle_ssl_accept(connection *cptr, u_ns_ts_t now)
+{
+int r;
+
+ // HPDDL2_SSL(cptr, "do ssl accept");
+  r=SSL_accept(cptr->ssl);
+ // HPDDL2_SSL(cptr, "SSL accept:done r=%d", r);
+  switch (SSL_get_error(cptr->ssl, r))
+  {
+    case SSL_ERROR_NONE:
+     // HPDDL2_SSL(cptr, "set_ssl:case no err");
+       //check_cert_chain(cptr->ssl, "localhost");
+      if(g_ssl_client_authentication)
+        check_ssl_client_cert(cptr);
+      cptr->state = READ_REQUEST;
+      break;
+    case SSL_ERROR_WANT_READ:
+     // HPDDL2_SSL(cptr, "set_ssl:case want read err");
+      cptr->state = SSL_ACCEPTING;
+      return;
+    case SSL_ERROR_WANT_WRITE:
+     // HPDDL2_SSL(cptr, "set_ssl:case want write err");
+      cptr->state = SSL_ACCEPTING;
+      return;
+    case SSL_ERROR_SYSCALL:{
+      char error[512];
+      //list accepted cipher.
+    //  HPDDL2_SSL(cptr, "available cipher = %s, last error = %s", SSL_get_cipher_list(cptr->ssl, 0),  ERR_error_string(ERR_get_error(), error));
+    //  HPDDL2_SSL(cptr, "set_ssl:case err syscall err=%s", strerror(errno));
+    //  close_fd(cptr, 1, now);
+      return;
+    }
+    case SSL_ERROR_ZERO_RETURN:
+    //  HPDDL2_SSL(cptr, "set_ssl:case err zero");
+    //  close_fd(cptr, 1, now);
+      return;
+    case SSL_ERROR_SSL:
+    //  HPDDL2_SSL(cptr, "set_ssl:case err ssl");
+      ERR_print_errors_fp(stderr);
+    //  if(g_ssl_client_authentication) //Only to debug log
+    //    check_ssl_client_cert(cptr);
+    //  close_fd(cptr, 1, now);
+      return;
+    default:
+    //  HPDDL2_SSL(cptr, "set_ssl:case default");
+      ERR_print_errors_fp(stderr);
+    //  close_fd(cptr, 1, now);
+      return;
+  }
+}
+
+
+
+
+int xo_set_ssl()
+{
+  BIO *sbio;
+
+  XODL_CLI("Method called.\n");
+  if (!(sbio = BIO_new_socket(xo_client.conn_fd, BIO_NOCLOSE)))
+    hpd_berr_exit("BIO_new_socket failed.");
+  /* Set up BIOs */
+  SSL_set_bio(xo_client.ssl, sbio, sbio);
+
+  handle_ssl_accept(cptr, now);
+
+}
+
+
+
